@@ -21,21 +21,22 @@ class Coleccion():
 
     def dar_medios(self):
         pass
-    
+
         # return [medio.name for medio in Medio]
 
     def editar_album(self, album_id, titulo, anio, descripcion, medio):
-        busqueda = session.query(Album).filter(Album.titulo == titulo, Album.id != album_id).all()
-        if len(busqueda) == 0:
-            album = session.query(Album).filter(Album.id == album_id).first()
-            album.titulo = titulo
-            album.ano = anio
-            album.descripcion = descripcion
-            album.medio = medio
-            session.commit()
-            return True
-        else:
-            return False
+        # busqueda = session.query(Album).filter(Album.titulo == titulo, Album.id != album_id).all()
+        # if len(busqueda) == 0:
+        #     album = session.query(Album).filter(Album.id == album_id).first()
+        #     album.titulo = titulo
+        #     album.ano = anio
+        #     album.descripcion = descripcion
+        #     album.medio = medio
+        #     session.commit()
+        #     return True
+        # else:
+        #     return False
+        pass
 
     def eliminar_album(self, album_id):
         try:
