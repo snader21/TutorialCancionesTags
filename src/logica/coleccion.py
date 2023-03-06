@@ -21,6 +21,7 @@ class Coleccion():
 
     def dar_medios(self):
         pass
+    
         # return [medio.name for medio in Medio]
 
     def editar_album(self, album_id, titulo, anio, descripcion, medio):
